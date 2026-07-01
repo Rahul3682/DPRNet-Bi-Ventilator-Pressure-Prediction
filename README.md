@@ -56,10 +56,14 @@ DPRNet-Bi-Ventilator-Pressure-Prediction/
 ├── DPRNet_Bi_intra_breath.png
 ├── DPRNet_Bi_physics_params.png
 └── results/
-    └── mimic3/                         # Cross-dataset validation outputs
-        ├── mimic_prediction_vs_target.png   # (rename to match your actual file)
-        ├── mimic_error_distribution.png     # (rename to match your actual file)
-        └── mimic_errors.npz
+    └── mimic3/
+        └── results/
+            └── mimic3/                          # Cross-dataset validation outputs (nested folder from upload)
+                ├── DPRTNet_Bi_eval.png
+                ├── dprtnet_bi_feature_importance.png
+                ├── dprtnet_bi_feature_importance.csv
+                ├── dprtnet_bi_intra_breath.png
+                └── dprtnet_bi_metrics.json
 ```
 
 ## 🚀 Installation
@@ -117,17 +121,17 @@ To test how well DPRNet-Bi generalizes beyond its training distribution, the tra
 
 > ⚠️ **Important caveat:** MIMIC-III does not provide a direct, clean ground-truth airway pressure channel like the Kaggle dataset does. The evaluation here uses a **surrogate pressure target derived from the respiration signal**, not a true measured airway pressure. So this result is best read as a **generalization sanity check** — evidence the model produces physiologically reasonable outputs on real ICU data — rather than a like-for-like benchmark against the Kaggle numbers or a formal statistical comparison against baseline models.
 
-**Evaluation outputs** (from `results/mimic3/`):
+**Evaluation outputs** (from `results/mimic3/results/mimic3/`):
 
-![MIMIC-III Prediction vs Surrogate Target](results/mimic3/mimic_prediction_vs_target.png)
+![MIMIC-III Evaluation](results/mimic3/results/mimic3/DPRTNet_Bi_eval.png)
 
-![MIMIC-III Error Distribution](results/mimic3/mimic_error_distribution.png)
+![MIMIC-III Feature Importance](results/mimic3/results/mimic3/dprtnet_bi_feature_importance.png)
 
-*(Replace the two filenames above with the actual plot filenames inside your `results/mimic3/` folder — GitHub image paths are case-sensitive and must match exactly.)*
+![MIMIC-III Intra-Breath Analysis](results/mimic3/results/mimic3/dprtnet_bi_intra_breath.png)
 
-**Files in this folder:**
-- `mimic_errors.npz` — raw prediction error arrays for further analysis
-- add any additional `.png`/`.csv` plots you generated for this validation run
+**Additional files in this folder:**
+- `dprtnet_bi_metrics.json` — full metric breakdown for the MIMIC-III run
+- `dprtnet_bi_feature_importance.csv` — raw feature importance values
 
 ## ⚠️ Note
 
