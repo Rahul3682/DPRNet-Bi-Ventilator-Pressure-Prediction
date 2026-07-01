@@ -143,13 +143,13 @@ This repository includes:
 
 ### Feature Importance
 
-![Feature Importance](dprtnet_bi_feature_importance.png)
+![Feature Importance](dprtnet_Bi_feature_importance.png)
 
 ---
 
 ### MIMIC-III Evaluation
 
-![MIMIC-III Evaluation](DPRTNet_Bi_eval.png)
+![MIMIC-III Evaluation](DPRTNet_bi_eval.png)
 
 ## 📸 Sample Results
 
