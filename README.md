@@ -38,8 +38,6 @@ Built with **Python**, **PyTorch**, and **Google Colab**.
 Python · PyTorch · NumPy · Pandas · Matplotlib · Scikit-learn · Joblib · Google Colab
 
 ## 📂 Project Structure
-
-```
 DPRNet-Bi-Ventilator-Pressure-Prediction/
 │
 ├── DPRNet_Bi_FIXED_Colab_(2).ipynb     # Main training/eval notebook
@@ -56,16 +54,14 @@ DPRNet-Bi-Ventilator-Pressure-Prediction/
 ├── DPRNet_Bi_intra_breath.png
 ├── DPRNet_Bi_physics_params.png
 └── results/
-    └── mimic3/
-        └── results/
-            └── mimic3/                          # Cross-dataset validation outputs (nested folder from upload)
-                ├── DPRTNet_Bi_eval.png
-                ├── dprtnet_bi_feature_importance.png
-                ├── dprtnet_bi_feature_importance.csv
-                ├── dprtnet_bi_intra_breath.png
-                └── dprtnet_bi_metrics.json
-```
-
+└── mimic3/
+└── results/
+└── mimic3/
+├── DPRTNet_Bi_eval.png
+├── dprtnet_bi_feature_importance.png
+├── dprtnet_bi_feature_importance.csv
+├── dprtnet_bi_intra_breath.png
+└── dprtnet_bi_metrics.json
 ## 🚀 Installation
 
 ```bash
