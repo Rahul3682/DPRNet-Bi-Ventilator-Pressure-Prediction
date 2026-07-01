@@ -121,6 +121,35 @@ This repository includes:
 - MIMIC-III Evaluation Results
 
 ---
+## 📸 Project Results
+
+### Training Curves
+
+![Training Curves](DPRNet_Bi_training_curves.png)
+
+---
+
+### Model Evaluation
+
+![Evaluation](DPRNet_Bi_eval.png)
+
+---
+
+### Physics Parameters
+
+![Physics Parameters](DPRNet_Bi_physics_params.png)
+
+---
+
+### Feature Importance
+
+![Feature Importance](dprtnet_bi_feature_importance.png)
+
+---
+
+### MIMIC-III Evaluation
+
+![MIMIC-III Evaluation](DPRTNet_Bi_eval.png)
 
 ## 📸 Sample Results
 
