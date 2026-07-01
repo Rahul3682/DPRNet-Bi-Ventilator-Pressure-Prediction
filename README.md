@@ -1,27 +1,37 @@
 # 🫁 DPRNet-Bi: Physics-Informed Bidirectional LSTM for Ventilator Airway Pressure Prediction
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+---
 
 ## 📖 Overview
 
-DPRNet-Bi is a Physics-Informed Bidirectional LSTM framework developed for predicting ventilator airway pressure in biomedical applications. The model combines deep learning with physiological knowledge to improve prediction accuracy, robustness, and interpretability.
+DPRNet-Bi is a **Physics-Informed Bidirectional LSTM (Bi-LSTM)** framework developed for predicting ventilator airway pressure in biomedical applications. The model combines deep learning with physiological constraints to improve prediction accuracy, robustness, and interpretability.
 
 This project is implemented using **Python**, **PyTorch**, and **Google Colab**.
 
 ---
 
-## ✨ Key Features
+## 🎯 Objectives
 
-- Physics-Informed Bidirectional LSTM Architecture
-- Ventilator Airway Pressure Prediction
-- Biomedical Time-Series Analysis
-- Deep Learning using PyTorch
+- Predict ventilator airway pressure accurately.
+- Integrate physiological knowledge into deep learning.
+- Improve model generalization.
+- Evaluate performance on external datasets (MIMIC-III).
+
+---
+
+## ✨ Features
+
+- Physics-Informed Bidirectional LSTM
+- Biomedical Time-Series Prediction
+- PyTorch Implementation
 - Feature Importance Analysis
-- Training & Validation Performance Visualization
-- Cross-Dataset Evaluation on MIMIC-III
+- Training & Validation Visualization
+- Cross-Dataset Evaluation (MIMIC-III)
 - Google Colab Compatible
 
 ---
@@ -34,8 +44,8 @@ This project is implemented using **Python**, **PyTorch**, and **Google Colab**.
 - Pandas
 - Matplotlib
 - Scikit-learn
+- Joblib
 - Google Colab
-- Jupyter Notebook
 
 ---
 
@@ -51,51 +61,30 @@ DPRNet-Bi-Ventilator-Pressure-Prediction/
 │
 ├── results/
 │   ├── training/
-│   ├── mimic3/
+│   └── mimic3/
 │
-├── DPRNet_Bi_training_curves.png
-├── DPRNet_Bi_eval.png
-├── DPRNet_Bi_decomposition.png
-├── DPRNet_Bi_physics_params.png
-├── DPRNet_Bi_intra_breath.png
-├── DPRNet_Bi_feature_importance.csv
+├── model_comparison.csv
 ├── DPRNet_Bi_metrics.json
-└── model_comparison.csv
+└── images/
 ```
-
----
-
-## 📊 Results
-
-### Training Performance
-
-- Training Curves
-- Validation Performance
-- Physics Parameter Analysis
-- Feature Importance
-- Model Comparison
-
-### Cross-Dataset Evaluation
-
-The trained model was also evaluated on the **MIMIC-III** dataset to assess its generalization capability across different clinical data distributions.
 
 ---
 
 ## 🚀 Installation
 
-Clone the repository
+Clone this repository:
 
 ```bash
 git clone https://github.com/Rahul3682/DPRNet-Bi-Ventilator-Pressure-Prediction.git
 ```
 
-Move into the project folder
+Move into the project folder:
 
 ```bash
 cd DPRNet-Bi-Ventilator-Pressure-Prediction
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -111,42 +100,64 @@ Open the notebook:
 DPRNet_Bi_FIXED_Colab_(2).ipynb
 ```
 
-Run all cells sequentially to:
+Run all notebook cells sequentially to:
 
 - Load Dataset
 - Train the Model
+- Predict Airway Pressure
 - Evaluate Performance
-- Generate Prediction Results
-- Save Metrics and Visualizations
+- Generate Visualizations
 
 ---
 
-## 📈 Outputs
+## 📊 Results
 
-The repository contains:
+The project includes:
 
-- Training Curves
-- Evaluation Results
-- Feature Importance Analysis
-- Physics Parameter Visualization
-- Performance Metrics
-- Model Comparison
-- MIMIC-III Evaluation Results
+- ✅ Training Curves
+- ✅ Validation Performance
+- ✅ Model Comparison
+- ✅ Feature Importance Analysis
+- ✅ Physics Parameter Visualization
+- ✅ Performance Metrics
+- ✅ Cross-Dataset Evaluation on MIMIC-III
+
+---
+
+## 📸 Sample Outputs
+
+### Training Performance
+
+> *(Add your training curve image here)*
+
+### Model Evaluation
+
+> *(Add your evaluation graph here)*
+
+### MIMIC-III Evaluation
+
+> *(Add your MIMIC-III evaluation image here)*
+
+---
+
+## 📈 Model Evaluation
+
+The proposed DPRNet-Bi model was evaluated using standard regression metrics and tested on the **MIMIC-III dataset** to assess its robustness and generalization capability.
 
 ---
 
 ## ⚠️ Note
 
-The trained model (`.pt`) file is not included in this repository because it exceeds GitHub's web upload size limit. Users can reproduce the model by running the provided notebook.
+The trained `.pt` model file is not included because it exceeds GitHub's web upload size limit. The model can be reproduced by running the provided notebook.
 
 ---
 
 ## 🔮 Future Work
 
-- Transformer-based Time-Series Models
-- Multi-Hospital Validation
+- Transformer-based architectures
 - Explainable AI (XAI)
-- Real-Time Ventilator Prediction
+- Multi-Hospital Validation
+- Real-Time Deployment
 - Clinical Decision Support Integration
 
 ---
@@ -155,8 +166,7 @@ The trained model (`.pt`) file is not included in this repository because it exc
 
 **Rahul Kumar Sah**
 
-Biomedical Engineering Graduate
-
+🎓 B.Tech in Biomedical Engineering  
 Central University of Rajasthan
 
 GitHub: https://github.com/Rahul3682
